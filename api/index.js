@@ -2,6 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import userRoutes from './routes/user.route.js';
 import authRoutes from './routes/auth.route.js';
+import cookieParser from "cookie-parser";
 mongoose
   .connect(
     "mongodb+srv://Priyanshu:priyanshugmishra4001@mern-blog.n1y7dse.mongodb.net/mern-blog?retryWrites=true&w=majority&appName=mern-blog"
@@ -15,7 +16,7 @@ mongoose
 
 const app = express();
 app.use(express.json());
-
+app.use(cookieParser());
 
 app.listen(3000, () => {
   console.log("Server is running on port 3000");

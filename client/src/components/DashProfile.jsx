@@ -130,18 +130,6 @@ export default function DashProfile() {
           placeholder="email"
           defaultValue={currentUser.email}
         />
-        <TextInput
-          type="text"
-          id="username"
-          placeholder="username"
-          defaultValue={currentUser.username}
-        />
-        <TextInput
-          type="email"
-          id="email"
-          placeholder="email"
-          defaultValue={currentUser.email}
-        />
         <TextInput type="password" id="password" placeholder="password" />
         <Button type="submit" gradientDuoTone="purpleToBlue" outline>
           Update
